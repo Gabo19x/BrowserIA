@@ -95,7 +95,7 @@ function AgregarMensaje(emisor, texto) {
     const quien = nuevoMensaje.querySelector("span")
     const men = nuevoMensaje.querySelector("p")
 
-    quien.textContent = (emisor == "Bot"? "Bot" : "Tú")
+    quien.textContent = (emisor == "Bot"? "🤖" : "🤓")
     men.textContent = texto
     console.log(emisor);
     
