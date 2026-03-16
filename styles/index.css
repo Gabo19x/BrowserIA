@@ -1,0 +1,122 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  place-content: center;
+  justify-content: center;
+  height: 100dvh;
+  background-color: rgb(27, 27, 27);
+}
+body h1, body h2, body h3, body span, body p, body small {
+  color: #FFFFFF;
+}
+body small {
+  font-size: 10px;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 0;
+  margin: auto;
+}
+
+.Inicio {
+  margin-bottom: 10px;
+}
+
+main {
+  width: 600px;
+  max-width: 100%;
+  height: 70vh;
+  background-color: rgb(31, 31, 31);
+  border: 1px solid #212121;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #212121;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.Mensaje {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.Mensaje > span:first-child {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mensaje > p:last-child {
+  padding: 5px 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgb(56, 56, 56);
+}
+.Mensaje.Usuario {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.Mensaje.Usuario > span:first-child {
+  background-color: #D32F2F;
+}
+.Mensaje.Bot {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+.Mensaje.Bot > span:first-child {
+  background-color: #FF5722;
+}
+
+form {
+  display: flex;
+}
+form input {
+  border-radius: 10px;
+  flex-grow: 1;
+  border: 0;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #212121;
+  background-color: rgb(31, 31, 31);
+  color: #FFFFFF;
+  box-shadow: 0 0 10px #212121;
+  outline: none;
+}
+form button {
+  background-color: rgb(31, 31, 31);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+  box-shadow: 0 0 10px #212121;
+  transition: background 0.5s ease;
+}
+form button[disabled] {
+  background: #212121;
+  opacity: 0.5;
+  pointer-events: none;
+}
+form button:hover {
+  background: rgb(56, 56, 56);
+}/*# sourceMappingURL=index.css.map */
